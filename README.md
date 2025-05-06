@@ -4,8 +4,11 @@ Olá está é uma solução simples para o desafio!
 
 ##Front end!
 
-Para acessar o front end `localhost/frontend/` lá haverá uma página inicial!
-Apertando o botão você poderá ver a VIEW `get_conversations` (url direta: `localhost/frontend/get-conversations/`) renderizada e pode selecionar as conversas disponíveis além de ver o status da conversa! Apertando a conversa, você pode ver detalhes da mesma e ver as mensagens enviadas e recebidas (url direta: `localhost/frontend/conversation/{id}`).
+Para acessar o front end acesse o  url `localhost/frontend/`!
+
+Apertando o botão você poderá ver a VIEW `get_conversations` (url direta: `localhost/frontend/get-conversations/`) renderizada e pode selecionar as conversas disponíveis além de ver o status da conversa!
+
+Apertando a conversa, você pode ver detalhes da mesma e ver as mensagens enviadas e recebidas (url direta: `localhost/frontend/conversation/{id}`).
 
 
 

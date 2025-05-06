@@ -24,7 +24,7 @@ def webhook(request):
 
         elif event_type == "NEW_MESSAGE": ##EVENTO DE MENSAGEM RECEBIDA OU ENVIADA##
             if not all(k in event_data for k in ["conversation_id", "direction", "content"]):
-                return JsonResponse({"error": "Invalid JSON"}, status=400)
+                return JsonResponse({"error": "Invalid JSON"}, status=400) 
 
             conversation_id = event_data.get("conversation_id")
             if not conversation_id or not str(conversation_id).isdigit():
@@ -58,6 +58,7 @@ def webhook(request):
         return JsonResponse({"error": "Invalid JSON"}, status=400)
 
 
+
 @csrf_exempt
 def get_conversation(request, id):
     if request.method != "GET":
@@ -74,3 +75,4 @@ def get_conversation(request, id):
         "status": conversation.status,
         "messages": messages
     }, status=200)
+

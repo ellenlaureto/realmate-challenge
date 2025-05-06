@@ -8,6 +8,7 @@ class Conversation(models.Model):
     status = models.CharField(max_length=10, choices=STATUS_CHOICE,default='OPEN')
     timestamp = models.DateTimeField(auto_now_add=True)
 
+
 class Message(models.Model):
     TYPE_CHOICE = [('SENT','Sent'), ('RECEIVED','Received'),]
 

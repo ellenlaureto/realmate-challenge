@@ -1,0 +1,24 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversas</title>
+    <link rel="stylesheet" href="{% static 'frontend/style.css' %}">
+</head>
+<body>
+    <h2>Lista de Conversas</h2>
+    <ul>
+        {% for conversation in conversations %}
+            <li>
+                <a href="{% url 'conversation_detail' conversation.id %}", class="bottom">
+                    📌 ID: {{ conversation.id }} - Status: {{ conversation.status }}
+                </a>
+            </li>
+        {% endfor %}
+    </ul>
+
+    <a href="{% url 'home' %}", class="bottom">🔙 Voltar para Página Inicial</a>
+</body>
+</html>

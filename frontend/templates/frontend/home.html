@@ -1,0 +1,16 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Aplicação</title>
+    <link rel="stylesheet" href="{% static 'frontend/style.css' %}">
+</head>
+<body>
+    <h1>Realmate Challenge!</h1>
+    <p>Esta é a frontend! Click no Link abaixo para ver as conversas</p>
+
+    <a href="{% url 'get_conversations' %}" class="bottom">📩 Ver Conversas</a>
+</body>
+</html>

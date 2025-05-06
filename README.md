@@ -1,3 +1,14 @@
+#Resultados
+
+Olá está é uma solução simples para o desafio!
+
+##Front end!
+
+Para acessar o front end `localhost/frontend/` lá haverá uma página inicial!
+Apertando o botão você poderá ver a VIEW `get_conversations` (url direta: `localhost/frontend/get-conversations/`) renderizada e pode selecionar as conversas disponíveis além de ver o status da conversa! Apertando a conversa, você pode ver detalhes da mesma e ver as mensagens enviadas e recebidas (url direta: `localhost/frontend/conversation/{id}`).
+
+
+
 # realmate-challenge
 
 ## Introdução
@@ -162,5 +173,3 @@ Caso tenha dúvidas sobre o desafio, entre em contato com nossa equipe de tecnol
 Boa sorte! 🚀
 
 _Equipe Realmate_
-
-# Resultados
